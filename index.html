@@ -1,80 +1,121 @@
 <!DOCTYPE html>
- <html>
+<html >
     <head>
-     <title>html Table</title>
+        <title>navbar</title>
+        <style>
 
-       <style>
-
-           html, body
+            html{
+                height: 100%;
+            }
+            body
+            {
+                background-color: lightgrey;
+                height: 100%;
+                margin: 0;
+                padding:0;
+                display:flex;
+                flex-direction:column
+            }
+                
+           #navbar
            {
-              width:100%;
-              height:100%;
-              margin:0;
-              padding:0;
-              overflow:hidden;
+            background-color: blanchedalmond;
+            padding: 0%;
+            margin: 0%;
+            display:flex;
+            justify-content: space-between;
+           }
+
+           #navlinks{
+                display: flex;
+                justify-content: end;
+                padding-right: 1%;
+                align-items: center;
+                width: 100%;
+           }
+
+            #navlinks a{
+                color: #000;
+                text-decoration: none;
+                padding: 4%;
+            }
+            #navbar a:hover{
+                color: brown;
             }
 
-             #table 
-              {
-                 display:inline-block;
-                  width:100%;
-              }
- 
-              td,th
-              {
-                  padding:20px;
-              }
+           #logo img{
+            width:30%;
+            height:100%;
+           }
+
+          #bigdiv{
+            display: flex;
+            justify-content: left;
+            flex: 1;
+          }
+
+          #part1
+          {
+            padding: 10%;
+            padding-bottom: 30%;
+            width:20%;
+            background-color: wheat;
+          }
+
+          #part2
+          {
+            padding: 5%;
+            padding-bottom: 30%;
+            width: 20%;
+            background-color: cadetblue;
+          }
+
+          #part3
+          {
+            padding: 10%;
+            padding-bottom: 30%;
+            width:20%;
+            background-color: darkgray;
+            
+        }
+
+        #footer 
+        {
+            background-color: rgb(123, 176, 222);
+            width: 100%;
+            margin-top: 1%;
+            padding-top: 2%;
+        }
+          
+        #footer p{
+            text-align: center;
+
+        }
 
         </style>
     </head>
-
-     <body>
-        <div id="table">
-          <table border="1" cellspacing ="1" cellpadding="5">
-
-               <tr>
-                 <th rowspan="2">S.N</th>
-                 <th colspan="2">Name</th>
-                 <th rowspan="2">Address</th>
-                </tr>
- 
-                <tr>
-                   <th>First</th>
-                   <th>Last</th>
-                </tr>
-
-                <tr>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-            </table>
+    <body>
+        <div id ="navbar">
+            <div id="'logo">
+                <imgsrc=""alt="">
+            </div>
+            <div id="navlinks">
+                <a href="#"target="_blank">Home</a>
+                <a href="#"target="_blank">About</a> 
+                <a href="#"target="_blank">Contact</a>
+                <a href="#"target="_blank">Services</a>
+                <a href="#"target="_blank">Blog</a>
+            </div>
         </div>
 
+        <div id="bigdiv">
+            <div id="part1"></div>
+            <div id="part2"></div>
+            <div id="part3"></div>
+        </div>
+
+        <footer id="footer">
+            
+        </footer>
     </body>
- </html>
-
-
+    </html>
